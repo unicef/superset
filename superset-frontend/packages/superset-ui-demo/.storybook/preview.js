@@ -6,7 +6,7 @@ import {
   smartDateFormatter,
   getCategoricalSchemeRegistry,
   getSequentialSchemeRegistry,
-  CategoricalD3,
+  CategoricalUnicef,
   CategoricalSuperset,
   SequentialCommon,
   SequentialD3,
@@ -63,7 +63,7 @@ configure();
 
 // Register color schemes
 const categoricalSchemeRegistry = getCategoricalSchemeRegistry();
-[CategoricalD3, CategoricalSuperset].forEach(group => {
+[CategoricalUnicef, CategoricalSuperset].forEach(group => {
   group.forEach(scheme => {
     categoricalSchemeRegistry.registerValue(scheme.id, scheme);
   });

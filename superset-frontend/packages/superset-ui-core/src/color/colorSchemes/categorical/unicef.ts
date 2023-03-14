@@ -17,11 +17,37 @@
  * under the License.
  */
 
-// export { default as CategoricalAirbnb } from './airbnb';
-// export { default as CategoricalD3 } from './d3';
-// export { default as CategoricalEcharts } from './echarts';
-// export { default as CategoricalGoogle } from './google';
-// export { default as CategoricalLyft } from './lyft';
-// export { default as CategoricalPreset } from './preset';
-export { default as CategoricalSuperset } from './superset';
-export { default as CategoricalUnicef } from './unicef';
+import CategoricalScheme from '../../CategoricalScheme';
+
+const schemes = [
+  {
+    id: 'unicefColors',
+    label: 'Unicef Colors',
+    colors: [
+      // Full color
+      '#1FA8C9',
+      '#454E7C',
+      '#5AC189',
+      '#FF7F44',
+      '#666666',
+      '#E04355',
+      '#FCC700',
+      '#A868B7',
+      '#3CCCCB',
+      '#A38F79',
+      // Pastels
+      '#8FD3E4',
+      '#A1A6BD',
+      '#ACE1C4',
+      '#FEC0A1',
+      '#B2B2B2',
+      '#EFA1AA',
+      '#FDE380',
+      '#D3B3DA',
+      '#9EE5E5',
+      '#D1C6BC',
+    ],
+  },
+].map(s => new CategoricalScheme(s));
+
+export default schemes;

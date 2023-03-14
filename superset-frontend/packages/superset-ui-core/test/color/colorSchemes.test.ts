@@ -17,13 +17,14 @@
  * under the License.
  */
 import {
-  CategoricalAirbnb,
-  CategoricalEcharts,
+  // CategoricalAirbnb,
+  // CategoricalEcharts,
   CategoricalSuperset,
-  CategoricalPreset,
-  CategoricalD3,
-  CategoricalGoogle,
-  CategoricalLyft,
+  CategoricalUnicef,
+  // CategoricalPreset,
+  // CategoricalD3,
+  // CategoricalGoogle,
+  // CategoricalLyft,
   SequentialCommon,
   SequentialD3,
   CategoricalScheme,
@@ -34,13 +35,14 @@ describe('Color Schemes', () => {
   describe('categorical', () => {
     it('returns an array of CategoricalScheme', () => {
       [
-        CategoricalAirbnb,
-        CategoricalEcharts,
-        CategoricalD3,
-        CategoricalGoogle,
-        CategoricalLyft,
+        // CategoricalAirbnb,
+        // CategoricalEcharts,
+        // CategoricalD3,
+        // CategoricalGoogle,
+        // CategoricalLyft,
         CategoricalSuperset,
-        CategoricalPreset,
+        CategoricalUnicef,
+        // CategoricalPreset,
       ].forEach(group => {
         expect(group).toBeInstanceOf(Array);
         group.forEach(scheme =>

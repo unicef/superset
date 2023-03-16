@@ -8,6 +8,7 @@
 		"RUN mkdir -p /app",
 		"COPY ./ /app",
 		"WORKDIR /app",
+        "EXPOSE 8088",
 		"CMD [ \"docker-compose\", \"-f\", \"docker-compose-non-dev.yml\", \"pull\"]",
         "CMD [ \"docker-compose\", \"-f\", \"docker-compose-non-dev.yml\", \"up\"]"
 	]
